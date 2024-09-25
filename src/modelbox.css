@@ -1,0 +1,116 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.modal-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+section.active .show-modal {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+section.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+section.active .modal-box {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-box i {
+  font-size: 70px;
+  color: #4070f4;
+}
+
+.modal-box h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}
+
+.modal-box h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+.modal-box button {
+ background-color: #4070f4;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-box button:focus {
+  outline: none;
+}
+/* input */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none; /* Removes the default browser styling */
+  -moz-appearance: textfield; /* Hides the up/down arrows in Firefox */
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4070f4; /* Highlight border color on focus */
+  box-shadow: 0 0 5px rgba(64, 112, 244, 0.5); /* Glow effect on focus */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Hide spin buttons in Chrome */
+  margin: 0;
+}
+
+input[type="number"]::placeholder {
+  color: #999; /* Styling the placeholder text */
+}
+
+input[type="number"] {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+

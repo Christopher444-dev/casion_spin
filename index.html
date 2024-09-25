@@ -1,19 +1,89 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Welcome to Automation Anywhere's Spin the Wheel</title>
-    <meta charset="UTF-8" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-    </style>
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
 
-  <body>
-    <div id="spin_the_wheel">
-      <canvas id="wheel" width="800" height="800"></canvas>
-      <div id="spin">SPIN</div>
+<head>
+  <title>Welcome to Automation Anywhere's Spin the Wheel</title>
+  <meta charset="UTF-8" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="stylesheet" href="src/spin_wheel.css">
+  <link rel="stylesheet" href="src/nav_bar.css">
+  <link rel="stylesheet" href="src/modelbox.css" />
+    <link rel="stylesheet" href="src/left_bar.css">
+
+</head>
+
+<body>
+  <div class="headline">
+    <span class="profile">
+        <div class="spins">
+          <p id="spins">1</p>
+          <p>spins</p>
+        </div>
+      <div class="balance">
+        <p id="balance">50</p>
+        <p>balance</p>
+      </div>
+      <div class="profile_pic">
+        <img src="https://i.pinimg.com/564x/3a/63/27/3a6327fc45a3eaccc1ef3381fa630399.jpg" height=50 width=50
+          alt="profile">
+      </div>
+    </span>
+  </div>
+  <div class="main">
+    <div class="left">
+      <div class="navigation">
+        <button id="home" class="btn_home btn">Home</button>
+        <button id="top_up" class="btn_pop btn">Top up</button>
+        <button id="get_spin" class="btn_pop btn">Get Spin</button>
+      </div>
+      <hr>
+      <div class="addtion_info">
+        <p>additional info</p>
+        <ul>
+          <li>
+            <a href="#"> about us</a>
+          </li>
+          <li>
+            <a href="#"> more games </a>
+          </li>
+          <li>
+            <a href="#"> follow us </ahref>
+          </li>
+        </ul>
+      </div>
     </div>
-    <script defer src="src/index.js"></script>
-  </body>
+    <div class="right">
+      <div id="spin_the_wheel">
+        <canvas id="wheel" width="500" height="500"></canvas>
+        <div id="spin">SPIN</div>
+      </div>
+    </div>
+
+
+      <section id="modal-box" >
+        <span class="overlay"></span>
+        <div  class="modal-box">
+          <h2>Success</h2>
+          <h3 id="md_succes">You have won .</h3>
+            <button id='btn_claim' class="btn_pop btn">Claim</button>
+        </div>
+      </section>
+
+      <section id="modal-box-spin">
+        <span class="overlay"></span>
+        <div class="modal-box">
+          <h2>Enter Your Amount</h2>
+          <input type="number"  id="spin_number" placeholder="Enter a number" />
+          <button id='btn_claim_spin' class="btn_pop btn">Claim</button>
+        </div>
+      
+      </section>
+  </div>
+  <script defer src="src/spinwheel.js"></script>
+</body>
+
 </html>
