@@ -1,0 +1,146 @@
+ /* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* About Us Section */
+.about-us {
+  background-color: #1d2c3a;
+  color: #fff;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.about-us h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInDown 1s ease;
+}
+
+.about-us p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  animation: fadeInUp 1.2s ease;
+}
+
+.about-us .features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #2a3e52;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: fadeIn 1.5s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  background-color: #304c67;
+}
+
+.feature-card i.icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #f4b942;
+  color: #fff;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: bounceIn 2s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffdb5a;
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,187 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('https://img.pikbest.com/ai/illus_our/20230427/4b6f742aaffda591dc4ff58ce2395773.jpg!w700wp'); 
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-section p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  animation: fadeInUp 1.2s ease;
+}
+
+.hero-section .cta-button {
+  background-color: #f4b942;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .cta-button:hover {
+  background-color: #ffdb5a;
+  transform: translateY(-5px);
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 20px;
+  background-color: #1d2c3a;
+  color: white;
+}
+
+.features-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  animation: fadeInDown 1s ease;
+}
+
+.features-section .features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-section .feature-card {
+  background-color: #2a3e52;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.features-section .feature-card:hover {
+  transform: translateY(-10px);
+  background-color: #304c67;
+}
+
+.features-section .feature-card i.icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.features-section .feature-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.features-section .feature-card p {
+  font-size: 16px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.testimonials-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  animation: fadeInDown 1s ease;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.5s ease;
+}
+
+.testimonial p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.testimonial span {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #1d2c3a;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,143 @@
+
+/* Coming Soon Section */
+.coming-soon {
+    /* background-color: #1e1e1e; */
+  /* background-color: Green; */
+    /* padding: 30px; */
+    border-radius: 1rem;
+    width: 100%;
+    /* max-width: 1000px; */
+    /* margin: 30px auto; */
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.coming-soon h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    /* margin-bottom: 20px; */
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    /* Hide overflow to create fade effect */
+}
+
+/* Slide with 3 Cards */
+.card-slide {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Slide-in effect for each card */
+.card {
+    background-color: #2a2a2a;
+    width: 30%;
+    margin: 0 10px;
+    border-radius: 1rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+    position: relative;
+    color: #fff;
+}
+
+/* Trigger the slide-in when in view */
+.card-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    transform: translateY(-30px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade effect for cards near the edge */
+.slideshow-container::before,
+.slideshow-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    pointer-events: none;
+    /* background: linear-gradient(to right, rgba(30, 30, 30, 1), rgba(30, 30, 30, 0)); */
+    z-index: 2;
+}
+
+.slideshow-container::after {
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.slideshow-container::before {
+    left: 0;
+}
+
+/* Game Image */
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Game Info */
+.game-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.game-info h3 {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+.game-info p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 5px 0 0;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+

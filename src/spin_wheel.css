@@ -31,6 +31,10 @@
   border-radius: 50%;
   transition: 0.8s;
 }
+#spin{
+  position: absolute;
+  /* top: 360px; */
+}
 
 #spin::after {
   content: "";

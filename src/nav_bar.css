@@ -1,12 +1,14 @@
 .headline {
-  padding: 10px 20px; 
+  padding:0px;
   border-radius: 20px; 
-  width: 98%;
+  width: 100%;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: space-between; 
   background: linear-gradient(135deg, #6e7e91, #4b5b6b); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   overflow: hidden;
+  /* top: 10px; */
+  /* position: absolute; */
 }
 
 .headline .profile {
@@ -63,6 +65,7 @@
   gap: 10px;
 }
 
+
 #spins, #balance {
   font-size: 20px;
   font-weight: 600;
@@ -82,4 +85,14 @@
   align-items: center;
   gap: 10px; 
 }
-
+.nav{
+  display: flex;
+}
+.nav .btn{
+  padding: 7px;
+  border: 0;
+  border-radius: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}

@@ -11,93 +11,119 @@ body {
   margin: 0;
   height: 100vh;
   background: linear-gradient(to bottom, #aaaaaa, #eeeeee);
+  overflow: hidden;
 }
-
-
-.main {
-  padding: 1rem;
-  margin: 20px;
-  width: 99%;
+.mainbody{
+  height:100% ;
+  padding-left:20px;
+  padding-right:20px;
+  margin: 4px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.main{
+  /* background: Green; */
+  display: flex;
+  border-radius: 1rem;
   justify-content: space-between;
 }
 
 
-/* spin*/
-.btn_pop {
-  appearance: none;
-  background-color: #FFFFFF;
-  box-shadow: #ADCFFF 0 -12px 6px inset;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  display: inline-block;
-  margin: 0;
-  outline: none;
-  quotes: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+/* General Leaderboard Style */
+.leader_board {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, background 0.5s ease;
 }
 
-.btn_pop:hover {
-  background-color: #FFC229;
-  box-shadow: #FF6314 0 -6px 8px inset;
-  transform: scale(1.125);
+/* Hover Effect */
+.leader_board:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #333, #444);
 }
 
-
-
-/* CSS */
-.btn_home {
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  /* transition: all 250ms; */
-  transition: all .15s;
-  border: 0;
-  /* font-size: 16px; */
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+/* Top Winner Section */
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.btn_home:hover {
-  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
-  transform: scale(1.125) rotate(-4deg);
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #ffcc00;
 }
 
-/*top bar config*/
-.balance {
-  display: flex;
-  justify-content: space-around;
+.top-info {
+    display: flex;
+    flex-direction: column;
 }
 
-.btn {
-  width: 95%;
-  margin: 1rem;
-  border: 0px;
-  border-radius: 2rem;
-  border-style: none;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-  letter-spacing: -.24px;
-}
-
-.btn:active {
-  transform: scale(1.025);
-}
-
-@media (min-width: 768px) {
-  .btn {
+.winner-name {
     font-size: 1.5rem;
-    padding: .75rem 2rem;
-  }
+    font-weight: bold;
+    color: #ffcc00;
 }
+
+.winner-amount {
+    font-size: 1.2rem;
+    color: #d4af37;
+}
+
+/* List of Runners-up */
+.list ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list ol li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #3a3a3a;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.list ol li:hover {
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+}
+
+.player-name {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.player-amount {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Runner-up Avatars */
+.list ol li .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ffcc00;
+}
+
