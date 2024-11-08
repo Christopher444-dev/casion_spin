@@ -1,30 +1,32 @@
 .headline {
-  padding:0px;
-  border-radius: 20px; 
+  padding: 0px;
+  border-radius: 20px;
   width: 100%;
   display: flex;
-  justify-content: space-between; 
-  background: linear-gradient(135deg, #6e7e91, #4b5b6b); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  justify-content: space-between;
+  background: linear-gradient(135deg, #6e7e91, #4b5b6b);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  /* top: 10px; */
-  /* position: absolute; */
+  top: 10px;
+  position: sticky;
+  z-index: 1;
 }
 
 .headline .profile {
   display: flex;
   align-items: center;
-  gap: 2rem; 
-  margin-right: 20px; 
-  color: #fff; 
+  gap: 2rem;
+  margin-right: 20px;
+  color: #fff;
 }
 
-.profile > div {
-  text-align: center; 
+.profile>div {
+  text-align: center;
 }
 
-.profile .spins, .profile .balance {
-  background-color: rgba(255, 255, 255, 0.1); 
+.profile .spins,
+.profile .balance {
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
   border-radius: 10px;
 }
@@ -34,19 +36,20 @@
   overflow: hidden;
   width: 50px;
   height: 50px;
-  border: 2px solid white; 
+  border: 2px solid white;
 }
 
 .profile_pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
-#spins, #balance {
-  font-size: 20px; 
+#spins,
+#balance {
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .profile p {
@@ -55,40 +58,46 @@
   font-weight: 400;
   color: #e0e0e0;
 }
-.profile .spins, .profile .balance {
+
+.profile .spins,
+.profile .balance {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 10px 20px; 
+  padding: 10px 20px;
   border-radius: 10px;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
   gap: 10px;
 }
 
 
-#spins, #balance {
+#spins,
+#balance {
   font-size: 20px;
   font-weight: 600;
 }
 
-.spins p, .balance p {
+.spins p,
+.balance p {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
   color: #e0e0e0;
 }
 
-.profile > div {
-  text-align: left; 
+.profile>div {
+  text-align: left;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
 }
-.nav{
+
+.nav {
   display: flex;
 }
-.nav .btn{
+
+.nav .btn {
   padding: 7px;
   border: 0;
   border-radius: 1rem;

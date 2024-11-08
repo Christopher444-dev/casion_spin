@@ -10,8 +10,7 @@ body {
   place-items: center;
   margin: 0;
   height: 100vh;
-  background: linear-gradient(to bottom, #aaaaaa, #eeeeee);
-  overflow: hidden;
+  background-color: #1d2c3a;
 }
 .mainbody{
   height:100% ;
@@ -25,9 +24,12 @@ body {
 }
 .main{
   /* background: Green; */
+  margin: 20px;
   display: flex;
   border-radius: 1rem;
   justify-content: space-between;
+  /* transition: background-color 0.3s ease, transform 0.3s ease; */
+  /*   animation: bounceIn 2s ease; */
 }
 
 
@@ -45,6 +47,8 @@ body {
     color: #fff;
     font-family: Arial, sans-serif;
     transition: transform 0.3s ease, background 0.5s ease;
+  /* transition: background-color 0.3s ease, transform 0.3s ease; */
+    animation: bounceIn 2s ease;
 }
 
 /* Hover Effect */
@@ -127,3 +131,14 @@ body {
     border: 1px solid #ffcc00;
 }
 
+@keyframes bounceIn {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
