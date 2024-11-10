@@ -10,13 +10,15 @@
   top: 0;
   width: 100%;
   background-color: rgba(47, 2, 31, 23);
-  /* background-color: Beige; */
+  z-index: 100;
 }
+
 .topNav div {
   justify-content: space-around;
   align-content: center;
 }
-.topNav div > a {
+
+.topNav div>a {
   color: #ffffffcc;
   text-align: center;
   padding: 14px 16px;
@@ -26,32 +28,8 @@
   font-size: 17px;
   text-transform: uppercase;
 }
+
 .topNav a:hover {
   background-color: #dddfffcc;
   color: Black;
 }
-/* .sign_up{ */
-/*   margin-top: 50px; */
-/*   display: flex; */
-/*   overflow: hidden; */
-/*   width:100%; */
-/* } */
-/* .sign_up div{ */
-/*   background: Blue; */
-/*   overflow: hidden; */
-/* } */
-/* .content{ */
-/*   align-content: center; */
-/*   padding-left: 60px; */
-/*   width: 65%; */
-/* } */
-/* .content h1{ */
-/*   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-/*   letter-spacing: 3px; */
-/*   font-weight: 800; */
-/*   font-size: 65px; */
-/* } */
-/* .content span{ */
-/*   color: #FFC827; */
-/*   white-space: nowrap; */
-/* } */

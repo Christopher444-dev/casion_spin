@@ -12,10 +12,13 @@ body {
 
 .sign_up,
 .about {
-  margin-top: 50px;
   display: flex;
   overflow: hidden;
   width: 100%;
+}
+
+.sign_up {
+  margin-top: 50px;
 }
 
 .sign_up div,
@@ -190,29 +193,19 @@ p {
   }
 }
 
-/*blur effect*/
-
-/* .games .content, */
-/* .about .content, */
-/* .sign_up .content, */
-/* .img_blur, */
-/* .gameslist  */
 .blur_effect {
-  /* background-color: rgba(255, 255, 255, 0.4); */
-
+  position: relative;
   background-color: rgba(47, 2, 31, 0.6);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-
   padding: 20px 30px;
+  z-index: 1;
 }
 
 .why_us {
-  /* background: url("https://template.viserlab.com/casinous/demo/assets/images/why/shape.png"); */
   display: flex;
   padding: 2px;
 }
-
 
 
 .why_us .why_play {
@@ -251,7 +244,3 @@ h3 {
 .why_us .right>p {
   padding: 2px;
 }
-
-/* .purpel { */
-/*   background: rgba(47, 2, 31, 0.8); */
-/* } */
