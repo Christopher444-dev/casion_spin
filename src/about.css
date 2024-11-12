@@ -249,30 +249,43 @@
  }
 
  .card {
-   background-color: #4C004C;
+   background-image: url("https://template.viserlab.com/casinous/demo/assets/images/testimonial/bg.png");
+   width: 30%;
+   margin: 20px;
+   border-radius: 1rem;
+   background-position: center;
+   background-size: cover;
+
+ }
+
+ .card:hover {
+   transform: translateY(-10px);
+ }
+
+ .testimony {
+   /* background-color: #4C004C; */
+   background-color: rgba(76, 0, 76, 0.7);
+
    justify-content: space-around;
    align-content: center;
    border-radius: 1rem;
    display: flex;
    flex-direction: column;
    cursor: pointer;
-   width: 30%;
-   margin: 20px;
    padding: 10px;
    transition: transform 0.3s ease, background-color 0.3s ease;
    animation: fadeIn 1.5s ease;
  }
 
- .card:hover {
-   transform: translateY(-10px);
+ .testimony:hover {
    background-color: rgba(47, 2, 31, 23);
  }
 
- .card p {
+ .testimony p {
    animation: fadeInUp 1.2s ease;
  }
 
- .card div {
+ .testimony div {
    text-align: center;
    margin: 12px
  }
@@ -292,5 +305,6 @@
    color: #ffcc00;
    justify-items: center;
    align-items: center;
+   justify-content: center;
    animation: fadeInDown 1.2s ease;
  }

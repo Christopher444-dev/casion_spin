@@ -1,0 +1,9 @@
+footer {
+  background-image: url("https://template.viserlab.com/casinous/demo/assets/images/footer/bg.jp");
+}
+
+footer {
+  display: flex;
+  padding: 12px;
+  justify-content: space-around;
+}
