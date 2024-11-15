@@ -32,7 +32,8 @@
   border-radius: 50%;
   transition: 0.8s;
 }
-#spin{
+
+#spin {
   position: absolute;
   /* top: 360px; */
 }

@@ -22,10 +22,10 @@
   <div class="mainbody">
     <div class="headline">
       <span class="nav">
-        <a href="Landing_page.html" id="home" class="btn_link btn">Home</a>
+        <a href="./index.php" id="home" class="btn_link btn">Home</a>
         <button id="top_up" class="btn_action btn">Top up</button>
         <button id="get_spin" class="btn_action btn">Get Spin</button>
-        <a href="about.html" class="btn btn_link"> about us</a>
+        <a href="about.php" class="btn btn_link"> about us</a>
       </span>
       <span class="profile">
         <div class="spins">
@@ -111,120 +111,8 @@
         <button id='btn_claim_spin' class="btn_action btn">Claim</button>
       </div>
     </section>
-
-    <!-- <section id="wheel_spin" class="active"> -->
-    <!--   <span class="overlay "></span> -->
-    <!--   <div class="modal-box"> -->
-    <!--     <div id="spin_the_wheel"> -->
-    <!--       <canvas id="wheel" width="440" height="440"></canvas> -->
-    <!--       <div id="spin">SPIN</div> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </section> -->
-
-  </div>
-  <div id="comming_soon" class="coming-soon">
-    <h2>Coming Soon</h2>
-    <div class="slideshow-container">
-      <div class="card-slide">
-        <div class="card">
-          <img src="https://www.gamblinginsider.com/img/news/depth-slot-copyright.jpg" alt="Game 1" class="game-image">
-          <div class="game-info">
-            <h3>Slot Machine X</h3>
-            <p>Releasing Soon!</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdWAmHYP22tZjXOZyfGVOxP2QAL8VP160ktQ&s"
-            alt="Game 2" class="game-image">
-          <div class="game-info">
-            <h3>Blackjack Supreme</h3>
-            <p>Get Ready!</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXCkli4jtPp7fzZVygHFsEjPUsunRx-0rrAw&s"
-            alt="Game 3" class="game-image">
-          <div class="game-info">
-            <h3>Roulette Royale</h3>
-            <p>Spin to Win!</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- More slides with 3 cards each -->
-      <div class="card-slide">
-        <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS43zFlzWw4m430wKswLu4rjmQMfoHUsZxa-A&s"
-            alt="Game 4" class="game-image">
-          <div class="game-info">
-            <h3>Jackpot Jamboree</h3>
-            <p>Coming Soon!</p>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="https://img.freepik.com/free-vector/poker-gambling-ace-card-dark-banner-play-win-big-prize_1017-52109.jpg"
-            alt="Game 5" class="game-image">
-          <div class="game-info">
-            <h3>Big Win Poker</h3>
-            <p>Get Ready to Win!</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh__aZAnY75ZAQxKM8NyRKIvsUzuZ-jPjbWw&s"
-            alt="Game 6" class="game-image">
-          <div class="game-info">
-            <h3>Spin Frenzy</h3>
-            <p>Exciting Spins!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slideshow Navigation Buttons -->
-    <!-- <a class="prev" onclick="moveSlides(-1)">&#10094;</a> -->
-    <!-- <a class="next" onclick="moveSlides(1)">&#10095;</a> -->
   </div>
   <script defer src="src/spinwheel.js"></script>
-  <script>let slideIndex = 0;
-    showSlides(slideIndex);
-
-    function moveSlides(n) {
-      slideIndex += n;
-      showSlides(slideIndex);
-    }
-
-    function showSlides(n) {
-      let slides = document.getElementsByClassName("card-slide");
-      let cards = document.querySelectorAll(".card");
-
-      if (n >= slides.length) {
-        slideIndex = 0;
-      }
-      if (n < 0) {
-        slideIndex = slides.length - 1;
-      }
-
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-
-      slides[slideIndex].style.display = "flex";
-
-      // Apply the slide-in effect for each card
-      cards.forEach((card, index) => {
-        setTimeout(() => {
-          card.classList.add("card-show");
-        }, index * 200); // staggered effect
-      });
-    }
-
-    // Auto-slide every 5 seconds (optional)
-    setInterval(function () {
-      moveSlides(1);
-    }, 5000);
-  </script>
 </body>
 
 
