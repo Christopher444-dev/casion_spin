@@ -16,8 +16,8 @@
     <a href="#" class="slipt"><img src="https://template.viserlab.com/casinous/demo/assets/images/logo.png"
         alt="" /></a>
     <div class="right">
-      <a href="Landing_page.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="./index.php">Home</a>
+      <a href="about.php">About</a>
       <a href="#Games">Games</a>
     </div>
   </div>
@@ -59,7 +59,7 @@
           <p>Enjoy quick and hassle-free payouts. Your winnings are transferred securely and swiftly.</p>
         </div>
       </div>
-      <a href="index.html" class="cta-button btn_link">Start Spinning Today!</a>
+      <a href="./sping_wheel.php" class="cta-button btn_link">Start Spinning Today!</a>
     </div>
   </section>
   <section class="testimonials">

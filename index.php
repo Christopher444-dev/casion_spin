@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="src/top_nav.css" />
   <link rel="stylesheet" href="src/btn_styles.css" />
   <link rel="stylesheet" href="src/landing_page.css" />
+  <link rel="stylesheet" href="src/footer.css">
 </head>
 
 <body>
@@ -15,8 +16,8 @@
     <a href="#" class="slipt"><img src="https://template.viserlab.com/casinous/demo/assets/images/logo.png"
         alt="" /></a>
     <div class="right">
-      <a href="Landing_page.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="./index.php">Home</a>
+      <a href="about.php">About</a>
       <a href="#Games">Games</a>
     </div>
   </div>
@@ -173,6 +174,26 @@
       </div>
     </div>
   </div>
+
+  <footer>
+    <div class="cont_">
+
+      <div class="cont">
+        <a href="#" class="slipt"><img src="https://template.viserlab.com/casinous/demo/assets/images/logo.png"
+            alt="" /></a>
+        <div class="right">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions </a>
+          <a href="#Games">Games</a>
+        </div>
+      </div>
+      <div class="copy">
+        <a> Copyrights &copf; All Rights Reserved </a>
+      </div>
+
+    </div>
+
+  </footer>
 </body>
 
 </html>
