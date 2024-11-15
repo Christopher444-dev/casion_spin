@@ -20,7 +20,8 @@
       <a href="about.php">About</a>
       <a href="#Games">Games</a>
     </div>
-  </div>
+    </div>
+
   <div class="sign_up ">
     <div class="content blur_effect ">
       <h1>Play <span>Online Casino</span> &amp; Win Money Unlimited</h1>

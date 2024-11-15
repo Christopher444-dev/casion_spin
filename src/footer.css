@@ -41,3 +41,60 @@ footer a {
   text-align: center;
   margin: 1rem;
 }
+
+.page_on {
+  margin-top: 4%;
+  background-image: url("https://template.viserlab.com/casinous/demo/assets/images/footer/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cont_2 {
+  /* background: Green; */
+  background-color: rgba(47, 2, 31, 0.6);
+  padding: 10px;
+
+}
+
+.cont_2 div {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  /* background: Green; */
+}
+
+.cont_2 div h2 {
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 65px;
+  margin-bottom: 3rem;
+  animation: fadeInDown 1s ease;
+}
+
+.cont_2 div ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cont_2 div ul>li {
+  padding: 5px;
+  margin: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.cont_2 a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffc827;
+}

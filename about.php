@@ -21,6 +21,21 @@
       <a href="#Games">Games</a>
     </div>
   </div>
+  <section class="page_on">
+      <div class="cont_2">
+        <div>
+          <h2>About</h2>
+          <ul>
+            <li>
+              <a href="./index.php">Home</a>
+            </li>
+            <li>
+              About
+            </li>
+          </ul>
+        </div>
+      </div>
+   </section>
 
   <section class="about-us">
     <div class="about">
