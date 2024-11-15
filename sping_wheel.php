@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="src/spin_wheel.css">
   <link rel="stylesheet" href="src/nav_bar.css">
   <link rel="stylesheet" href="src/modelbox.css" />
-  <link rel="stylesheet" href="src/left_bar.css">
+  <!-- <link rel="stylesheet" href="src/left_bar.css"> -->
   <link rel="stylesheet" href="src/comming_soon.css">
 
 </head>
@@ -81,7 +81,7 @@
             </li>
             <li>
               <img
-                src="https://static.wikia.nocookie.net/avatar/images/3/31/Korra_smiling.png/revision/latest/smart/width/250/height/250?cb=20200907192928"
+                src="https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100270.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725408000&semt=ais_hybrid"
                 alt="Runner 5" class="avatar">
               <span class="player-name">Mark Green</span>
               <span class="player-amount">$6,543</span>
