@@ -219,7 +219,7 @@
 
  .transparent_effect {
    position: relative;
-   background-color: rgba(47, 2, 31, 0.6);
+   background-color: rgba(47, 2, 31, 0.8);
    /* -webkit-backdrop-filter: blur(5px); */
    /* backdrop-filter: blur(5px); */
    padding: 20px 30px;
@@ -230,7 +230,17 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
+   background: url("https://template.viserlab.com/casinous/demo/assets/images/top/bg.png");
+   background-position: center;
+   background-size: cover;
    align-content: center;
+ }
+
+ .cont_1 {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
  }
 
  .testimonials .content {
@@ -255,6 +265,8 @@
    border-radius: 1rem;
    background-position: center;
    background-size: cover;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+   animation: fadeIn 1.5s ease;
 
  }
 
@@ -263,7 +275,6 @@
  }
 
  .testimony {
-   /* background-color: #4C004C; */
    background-color: rgba(76, 0, 76, 0.7);
 
    justify-content: space-around;
@@ -278,7 +289,8 @@
  }
 
  .testimony:hover {
-   background-color: rgba(47, 2, 31, 23);
+   /* background-color: rgba(47, 2, 31, 23); */
+   background-color: rgba(47, 2, 31, 0.9);
  }
 
  .testimony p {

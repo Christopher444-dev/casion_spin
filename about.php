@@ -62,8 +62,10 @@
       <a href="./sping_wheel.php" class="cta-button btn_link">Start Spinning Today!</a>
     </div>
   </section>
-  <section class="testimonials">
-    <div class="content">
+    <section class="testimonials">
+      <div class="cont_1 transparent_effect">
+
+    <div class="content tran">
       <h1>What Casion Players say</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti laboriosam ipsum amet? Itaque saepe,
@@ -135,6 +137,7 @@
 
       </ul>
     </div>
+      </div>
   </section>
   <footer>
     <div class="cont_">
