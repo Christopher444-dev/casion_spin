@@ -31,7 +31,7 @@
       </p>
       <div>
         <a class="btn_link">Play Now</a>
-        <a class="btn_link">Sign Up</a>
+        <a href="./signup.php" class="btn_link">Sign Up</a>
       </div>
     </div>
     <div>
