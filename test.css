@@ -168,7 +168,7 @@ label.hamburger {
     open {
       text-transform: uppercase;
       font-size: .8em;
-      align-text: center;
+      text-align: center;
       position: absolute;
       transform: translateY(50px);
       text-align: center;
@@ -232,7 +232,7 @@ body {
   scrollbar-track-color: #fff;
   scrollbar-arrow-color: #1abc9c;
   scrollbar-shadow-color: #1abc9c;
-  scrollbar-dark-shadow-color: #1abc9c;
+  scrollbar-darkshadow-color: #1abc9c;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
